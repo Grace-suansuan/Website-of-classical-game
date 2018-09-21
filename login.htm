@@ -1,0 +1,67 @@
+<html>
+
+<head>
+
+<style>
+body {background-color: white}
+p {margin-left: 20px}
+</style>
+
+<script>
+
+
+
+
+
+function PasswordCheck()
+{
+
+
+
+
+if (document.databse.username.value == '')
+{
+alert("username empty");
+document.getElementById("tishi").innerHTML="username empty.";
+
+
+}
+
+
+if (document.database.password.value == document.database.repassword.value)
+{
+alert("Passwords match");
+}
+else
+{
+alert("Password do not match");
+}
+
+
+
+
+
+
+}
+</script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Welcome</h1>
+
+            <form name='form' class="form" method='post' action='login.php' onSubmit="return check()">
+                <input type="text" placeholder="Account name" name='name'>
+                <input type="password" placeholder="Password" name='psw'>
+                <button type="submit" id="login-button" name='login' value='login'>Login</button>
+            </form>
+        </div>
+
+        <ul class="bg-bubbles">
+        </ul>
+    </div>
+</body>
+
+</html>

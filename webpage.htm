@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "stylesheet" href = "http://www.w3schools.com/w3css/3/w3.css">
+
+<body>
+
+
+<nav class="w3-bar w3-black">
+  <a href="#home" class="w3-button w3-bar-item">Home</a>
+  <a href="register.htm" class="w3-button w3-bar-item">Register</a>
+  <a href="login.htm" class="w3-button w3-bar-item">Login</a>
+  <a href="#Ranking of sample game & communication region" class="w3-button w3-bar-item">Communication Region</a>
+  <a href="sample.htm" class="w3-button w3-bar-item">Little Box</a>
+</nav>
+
+
+<section class="w3w3-display-bottommiddle w3-center w3-content" style="max-width: 800px">
+  <img class="mySlides" src="game_1.jpg"
+  style="width:45%">
+  <img class="mySlides" src="game_2.png"
+  style="width:45%">
+  <img class="mySlides" src="game_3.jpg"
+  style="width:45%">
+  <img class="mySlides" src="game_4.jpg"
+  style="width:45%">
+</section>
+<section class = "w3-container w3-center w3-content" styple="max-width:350px">
+  <h1 class="w3-wide"><b>Classic Game</b></h1>
+  <p class="w3-opacity"><i>Here are some information about classic games</i></p>
+  <p class="w3-justify">Have your ever played some classic games? Were your parents allowed you to play games? Did you have the experience of secretly playing games? At here, you can tell your story about playing games, especially some stories about playing classic games when you were young. So, this website mainly introduces a range of classic games which can recall your memory of playing them when you were little. Also, it provides a small sample for you to play which you can saw your score as well as other people, and it has some links to more classic games. <i><b>Just relax yourself and find your memory here</i></b></p>
+</section>
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+  <p>Pac-Man</p>
+  <img src="game_1.jpg" style="width:40%">
+    <p>Pac-Man is a kind of video game first released in Japan in May 1980. Players should navigate Pac-Man to eat dots without touching the ghosts. And when Pac-Man eats all the dots, it will go to a higher level.</p>
+    <p>Link to the game: <a href="https://www.google.com/search?q=pac+man&oq=Pac+man&aqs=chrome.0.69i59j69i57j69i60j69i65l3.1727j0j7&sourceid=chrome&ie=UTF-8#clb=clb" >Click here to play</a></p>
+  </article>
+  <article class="w3-third">
+    <p>Super Mario</p>
+    <img src="game_2.png" style="width:40%">
+    <p>Super Mario is a series of platform video games. It includes cute character called Mario and players should control Mario to jump across playforms and atop enemies.</p>
+    <p>Link to the game: <a href="http://www.joy.land/super-mario-bros.html" >Click here to play</a></p>
+  </article>
+  <article class="w3-third">
+    <p>Tetris</p>
+    <img src="game_4.jpg" style="width:45%">
+    <p>Tetris is a tile-matching puzzle video game, designed by Russian. Player should build a horizontal line of ten units without gaps to eliminate the block.</p>
+    <p>Link to the game: <a href="https://tetris.com/play-tetris" >Click here to play</a></p>
+  </article>
+<script>
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
